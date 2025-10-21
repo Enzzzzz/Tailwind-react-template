@@ -1,17 +1,15 @@
-import Navbar from "../components/navbars/navbar"
-import Logo from "../assets/logo.png" // <--- Test Logo
+import Navbar from "../Layout/navbar"
+import Logo from "/logo.png" // <--- Test Logo
 
 function Home() {
   return (
     <div className="">
-      <div className="bg-blue-gradient w-full">
-      <Navbar/>
-      </div>
-        <div id="firstLayer" className="section bg-blue-gradient items-start flex flex-column">
-          <img src={Logo} width={"200px"} className="" />
-          <h1 className=""> Tailwind + React Multi-page Template </h1>
+      <Navbar />
+        <div id="firstLayer" className="section bg-[theme('colors.primary')] flex flex-wrap">
+          <img src={Logo} width={"240px"} className="mt-24" />
+          <h1 className="text-9xl font-extrabold text-[theme('colors.primary')]"> Camila Gonçalves Advocacia </h1>
         </div>
-        <div id="secondLayer" className="section bg-blue-gradient-reverse">
+        <div id="secondLayer" className="section bg-red-gradient-reverse">
         </div>
     </div>
   )
