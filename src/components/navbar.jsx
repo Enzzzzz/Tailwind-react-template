@@ -80,10 +80,13 @@ const Navbar = () => {
 
         <div
           className={`${
-            toggle ? "flex fixed inset-0 bg-black bg-opacity-50 z-50" : "hidden"
+            toggle ? "flex fixed inset-0 bg-black bg-opacity-30 z-50" : "hidden"
           } sm:hidden`}
+          onClick={() => setToggle(false)}
         >
-          <div className="flex flex-col justify-between items-end p-6 bg-primary/55 border border-secondary/50 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-lg sidebar">
+          <div className="flex flex-col justify-between items-end p-6 bg-primary/55 border border-secondary/50 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-lg sidebar"
+          onClick={(e) => e.stopPropagation()}
+          >
             <ul className="list-none flex-col justify-end items-center flex-1">
               {navLinks.map((nav, index) => (
                 <li
@@ -91,6 +94,7 @@ const Navbar = () => {
                   className={`font-poppins font-nome cursor-pointer text-[16px] ${
                     index === navLinks.length - 1 ? "mb-0" : "mb-4"
                   } text-white`}
+                  onClick={() => setToggle(false)}
                 >
                   {index === 0 ? (
                     <a href={`/${nav.id}`}>{nav.title}</a>
