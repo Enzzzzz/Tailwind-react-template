@@ -1,10 +1,41 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { close, menu } from '../assets';
 import { navLinks } from '../constants';
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
+  const [textColor, setTextColor] = useState("text-white/80");
+
+  useEffect(() => {
+  const sections = document.querySelectorAll(".section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          switch (entry.target.id) {
+            case "firstLayer":
+              setTextColor("text-white/80");
+              break;
+            case "secondLayer":
+              setTextColor("text-black/80");
+              break;
+            default:
+              setTextColor("text-white/80");
+          }
+        }
+      });
+    },
+    { threshold: 0.5 } // considera visível se 50% da seção estiver na tela
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  return () => sections.forEach((section) => observer.unobserve(section));
+}, []);
+
+  
 
   return (
     <div className='w-full flex py-3 justify-between items-center navbar absolute md:fixed shadow-xl shadow-tertiary/5 top-0 left-0 z-50'>
@@ -19,7 +50,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-extrabold cursor-pointer text-[16px] sm:text-[18px] lg:text-[20px] ${index === navLinks.lenght - 1 ? 'mr-0' : 'mr-3 md:mr-10 lg:mr-12' } text-white/80 hover:text-white sub`}
+            className={`font-poppins font-extrabold cursor-pointer text-[16px] sm:text-[18px] lg:text-[20px] ${index === navLinks.lenght - 1 ? 'mr-0' : 'mr-3 md:mr-10 lg:mr-12' } ${textColor} hover:text-white sub`}
           >
             <a href={`#${nav.id}`}>
               {nav.title}
