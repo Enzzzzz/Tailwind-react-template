@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar"
-import Logo from "/logo.png" // <--- Test Logo
+import Logo from "/Logo2-Sem-Fundo.png"
+import Logo2 from "/Logo-Sem-Fundo.png"
 
 function Home() {
   return (
@@ -10,6 +11,8 @@ function Home() {
           <h1 className="text-3xl text-center m-10 font-extrabold text-text sm:text-4xl lg:text-5xl xl:text-7xl">Template Tailwind and ReactJS</h1>
         </div>
         <div id="secondLayer" className="section bg-red-gradient-reverse">
+          <img src={Logo2} width={"240px"} className="mt-24" />
+          <h1 className="text-3xl text-center m-10 font-extrabold text-tertiary sm:text-4xl lg:text-5xl xl:text-7xl">Template Tailwind and ReactJS</h1>
         </div>
     </div>
   )

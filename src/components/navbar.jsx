@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react'
 import { close, menu } from '../assets';
 import { navLinks } from '../constants';
+import Logo from "/Logo.jpg";
+import Logo2 from "/Logo2.jpg";
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
   const [textColor, setTextColor] = useState("text-white/80");
+  const [logoSrc, setLogoSrc] = useState(Logo);
 
   useEffect(() => {
   const sections = document.querySelectorAll(".section");
@@ -17,17 +20,20 @@ const Navbar = () => {
           switch (entry.target.id) {
             case "firstLayer":
               setTextColor("text-white/80");
+              setLogoSrc(Logo);
               break;
             case "secondLayer":
               setTextColor("text-black/80");
+              setLogoSrc(Logo2);
               break;
             default:
               setTextColor("text-white/80");
+              setLogoSrc(Logo);
           }
         }
       });
     },
-    { threshold: 0.5 } // considera visível se 50% da seção estiver na tela
+    { threshold: 0.5 }
   );
 
   sections.forEach((section) => observer.observe(section));
@@ -42,7 +48,7 @@ const Navbar = () => {
       <ul>
         <li>
             <a href='/'>
-              <img src='/logo.png' alt='logo' className='md:ml-32 cursor-pointer transform duration-200 hover:scale-[0.90] sm:hover:scale-100 md:hover:scale-150 scale-[0.8] sm:scale-90 md:scale-125 w-12 xl:w-18' />
+              <img src={logoSrc} alt='logo' className='ml-2 lg:mt-1 lg:mb-1 md:ml-32 cursor-pointer transform duration-200 hover:scale-[0.90] sm:hover:scale-100 md:hover:scale-150 scale-[0.8] sm:scale-90 md:scale-125 w-12 xl:w-12 lg:' />
             </a>
         </li>
       </ul>
