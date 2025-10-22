@@ -56,7 +56,7 @@ npm run build
 
 💡 How to Customize
 
-- You can edit index.css to change colors, spacing, or themes.
+- You can edit index.css to change colors or themes.
 - Modify or add new pages inside the /src/routes folder.
 - Update the Navbar and Footer components as needed.
 - Use this template as a base for landing pages, dashboards, or full websites.
@@ -115,7 +115,7 @@ npm run build
 
 💡 Como Personalizar
 
-- Edite index.css para ajustar cores, temas e espaçamentos.
+- Edite index.css para ajustar corese temas.
 - Adicione ou edite páginas dentro de /src/routes.
-- Atualize os itens da Navbar e informações de cards no arquivo /src/constants/index.js.
+- Atualize os itens da Navbar no arquivo /src/constants/index.js.
 - Crie novos layouts em /src/layout para manter o projeto modular e organizado.
