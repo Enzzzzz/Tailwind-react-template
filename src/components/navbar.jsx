@@ -7,11 +7,11 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <div className='w-full flex py-3 justify-between items-center navbar absolute md:fixed shadow-xl shadow-verde/5 bg-primary top-0 left-0 z-50'>
+    <div className='w-full flex py-3 justify-between items-center navbar absolute md:fixed shadow-xl shadow-tertiary/5 top-0 left-0 z-50'>
       <ul>
         <li>
             <a href='/'>
-              <img src='/logo.png' alt='logo' className='md:ml-32 cursor-pointer transform duration-200 hover:scale-[0.90] sm:hover:scale-100 md:hover:scale-150 scale-[0.8] sm:scale-90 md:scale-125 w-16 xl:w-66' />
+              <img src='/logo.png' alt='logo' className='md:ml-32 cursor-pointer transform duration-200 hover:scale-[0.90] sm:hover:scale-100 md:hover:scale-150 scale-[0.8] sm:scale-90 md:scale-125 w-12 xl:w-18' />
             </a>
         </li>
       </ul>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <img 
         src={toggle ? close : menu} 
         alt="menu"
-        className='w-[28px] h-[28] object-contain'
+        className='w-[24px] h-[24px] object-contain'
         onClick={() => setToggle((prev) => !prev)}
         />
 

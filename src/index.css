@@ -3,17 +3,38 @@
 /* =====================
    Theme collors 
    ===================== */
-   
-@theme {
+
+/* =====================
+   Theme for a RED Background
+
   --color-primary: #fc8484;
   --color-secondary: #84d4fc;
   --color-tertiary: #1a1a1a;
   --color-accent: #f55959;
   --color-hover: #fc6f6f;
   --color-text: #2b1e0f;
+   ===================== */
+   
+@theme {
+  --color-primary: #8c82fc;
+  --color-secondary: #74d2ff;
+  --color-tertiary: #0b0b23;
+  --color-accent: #ffb870;
+  --color-hover: #7a74e8;
+  --color-text: #e9ecff;
   --color-dimWhite: rgba(255, 255, 255, 0.7);
   --color-dimBlue: rgba(9, 151, 124, 0.1);
   --color-dimRed: rgba(151, 9, 49, 0.1);
+
+  --font-poppins: "Poppins", sans-serif;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-ss: 620px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1060px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1700px;
+  --breakpoint-xxl: 2300px;
 }
 
 @layer base {
@@ -24,6 +45,11 @@
     font-family: 'Poppins', system-ui, sans-serif;
     scroll-behavior: smooth;
   }
+}
+
+@font-face {
+  font-family: 'Felix Titling';
+  src: url('/fonts/Felixti.TTF') format('truetype');
 }
 
 @layer components {
@@ -86,6 +112,30 @@
       #f55959 29.82%,
       #fc8484 51.94%,
       #ffc3c3 90.29%
+    );
+  }
+
+    .bg-blue-gradient {
+    background: linear-gradient(
+      157.81deg,
+      #c3c9ff -43.27%,
+      #8486fc -21.24%,
+      #5c59f5 12.19%,
+      #3a37e7 29.82%,
+      #1815bb 51.94%,
+      #01084b 90.29%
+    );
+  }
+
+  .bg-blue-gradient-reverse {
+    background: linear-gradient(
+      157.81deg,
+      #01084b -43.27%,
+      #1815bb -21.24%,
+      #3a37e7 12.19%,
+      #5c59f5 29.82%,
+      #8486fc 51.94%,
+      #c3c9ff 90.29%
     );
   }
 }
