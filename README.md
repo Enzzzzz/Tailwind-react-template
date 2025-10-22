@@ -41,7 +41,7 @@ Follow these steps to start using the template:
 git clone https://github.com/Enzzzzz/Tailwind-react-template.git
 
 2️⃣ Enter the project folder
-cd react-tailwind-vite-template
+cd Tailwind-react-template
 
 3️⃣ Install dependencies
 npm install
