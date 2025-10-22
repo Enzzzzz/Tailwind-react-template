@@ -19,7 +19,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-nome cursor-pointer text-[14px] md:text-[16px] lg:text-[18px] ${index === navLinks.lenght - 1 ? 'mr-0' : 'mr-3 md:mr-10 lg:mr-12' } text-white/80 hover:text-white sub`}
+            className={`font-poppins font-extrabold cursor-pointer text-[16px] sm:text-[18px] lg:text-[20px] ${index === navLinks.lenght - 1 ? 'mr-0' : 'mr-3 md:mr-10 lg:mr-12' } text-white/80 hover:text-white sub`}
           >
             <a href={`#${nav.id}`}>
               {nav.title}

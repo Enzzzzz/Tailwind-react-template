@@ -50,6 +50,8 @@
 @font-face {
   font-family: 'Felix Titling';
   src: url('/fonts/Felixti.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @layer components {
@@ -163,6 +165,10 @@
   .bg-primary { background-color: var(--color-primary); }
   .bg-secondary { background-color: var(--color-secondary); }
   .bg-tertiary { background-color: var(--color-tertiary); }
+
+  .font-felix {
+    font-family: 'Felix Titling', serif;
+  }
 
   .text-primary { color: var(--color-primary); }
   .text-secondary { color: var(--color-secondary); }
