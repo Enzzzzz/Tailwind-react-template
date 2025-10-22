@@ -38,7 +38,7 @@ Follow these steps to start using the template:
 
 ### 1️⃣ Clone this repository
 ```bash
-git clone https://github.com/Enzzzzz/react-tailwind-vite-template.git
+git clone https://github.com/Enzzzzz/Tailwind-react-template.git
 
 2️⃣ Enter the project folder
 cd react-tailwind-vite-template
