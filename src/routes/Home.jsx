@@ -1,4 +1,4 @@
-import Navbar from "../Layout/navbar"
+import Navbar from "../components/navbar"
 import Logo from "/logo.png" // <--- Test Logo
 
 function Home() {
