@@ -18,16 +18,18 @@ It includes a clean folder structure, a responsive **Navbar**, and a **Footer** 
 
 ## 🧩 Project Structure
 
+```markdown
 src/
 ├─ assets/ → images, fonts, icons, etc.
 ├─ components/ → reusable UI components (Navbar, Footer, Buttons, etc.)
-├─ constants/ → contains global configuration like navigation items and reusable app data
-├─ data/ → placeholder for external data or static mock data used by components or pages
-├─ layout/ → layout-related components or reusable UI sections (e.g., cards, sections, wrappers)
+├─ constants/ → contains global configuration like navbar items and reusable app data
+├─ data/ → space for external or mock data used in components/pages
+├─ layout/ → layout-related components (cards, sections, containers, grids)
 ├─ routes/ → application pages and routing structure
-├─ Home.jsx → main entry page component
-├─ Index.css → Main Css file
+├─ Home.jsx → main home page component
+├─ index.css → main CSS file
 └─ main.jsx → Vite entry point
+```
 ---
 
 ## 🛠️ Installation & Setup
@@ -76,15 +78,18 @@ Ele possui uma estrutura de pastas organizada, componentes prontos de Navbar e F
 
 🧩 Estrutura do Projeto
 
- ├─ assets/          → imagens, fontes, ícones, etc.
- ├─ components/      → componentes reutilizáveis (Navbar, Footer, Botões, etc.)
- ├─ constants/       → contém configurações globais como itens da navbar e dados reutilizáveis
- ├─ data/            → espaço para dados externos ou dados mock utilizados em componentes/páginas
- ├─ layout/          → componentes visuais estruturais (cards, seções, containers, grids)
- ├─ routes/          → páginas da aplicação e estrutura de rotas
- ├─ Home.jsx         → página principal
- ├─ index.css        → principal arquivo de CSS
- └─ main.jsx         → ponto de entrada do Vite
+```markdown
+src/
+├─ assets/ → imagens, fontes, ícones, etc.
+├─ components/ → componentes reutilizáveis (Navbar, Footer, Botões, etc.)
+├─ constants/ → contém configurações globais como itens da navbar e dados reutilizáveis
+├─ data/ → espaço para dados externos ou dados mock utilizados em componentes/páginas
+├─ layout/ → componentes visuais estruturais (cards, seções, containers, grids)
+├─ routes/ → páginas da aplicação e estrutura de rotas
+├─ Home.jsx → página principal
+├─ index.css → principal arquivo de CSS
+└─ main.jsx → ponto de entrada do Vite
+```
 
 
 🛠️ Instalação e Uso
