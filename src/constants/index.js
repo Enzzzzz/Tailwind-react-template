@@ -4,16 +4,16 @@ export const navLinks = [
       title: "Page 2",
     },
     {
-      id: "id2",
-      title: "Title2",
+      id: "firstLayer",
+      title: "Section 1",
     },
     {
-      id: "id3",
-      title: "Title3",
+      id: "secondLayer",
+      title: "Section 2",
     },
     {
       id: "id4",
-      title: "Title4",
+      title: "A Title",
     },
   ];
   

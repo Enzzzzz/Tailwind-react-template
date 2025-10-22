@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import Logo from "/Logo.jpg";
@@ -93,7 +92,11 @@ const Navbar = () => {
                     index === navLinks.length - 1 ? "mb-0" : "mb-4"
                   } text-white`}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {index === 0 ? (
+                    <a href={`/${nav.id}`}>{nav.title}</a>
+                  ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  )}
                 </li>
               ))}
             </ul>
